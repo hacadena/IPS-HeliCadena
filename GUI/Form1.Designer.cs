@@ -39,6 +39,9 @@
             this.cajaSalario = new System.Windows.Forms.TextBox();
             this.cajaValorDelServicio = new System.Windows.Forms.TextBox();
             this.botonCalcularLiquidacion = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cajaValorDeLiquidacion = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -132,7 +135,7 @@
             // 
             // botonCalcularLiquidacion
             // 
-            this.botonCalcularLiquidacion.Location = new System.Drawing.Point(202, 307);
+            this.botonCalcularLiquidacion.Location = new System.Drawing.Point(202, 245);
             this.botonCalcularLiquidacion.Name = "botonCalcularLiquidacion";
             this.botonCalcularLiquidacion.Size = new System.Drawing.Size(135, 23);
             this.botonCalcularLiquidacion.TabIndex = 10;
@@ -140,11 +143,38 @@
             this.botonCalcularLiquidacion.UseVisualStyleBackColor = true;
             this.botonCalcularLiquidacion.Click += new System.EventHandler(this.botonCalcularLiquidacion_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(46, 302);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 13);
+            this.label6.TabIndex = 11;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(43, 302);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(110, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Valor de la liquidacion";
+            // 
+            // cajaValorDeLiquidacion
+            // 
+            this.cajaValorDeLiquidacion.Location = new System.Drawing.Point(202, 302);
+            this.cajaValorDeLiquidacion.Name = "cajaValorDeLiquidacion";
+            this.cajaValorDeLiquidacion.Size = new System.Drawing.Size(135, 20);
+            this.cajaValorDeLiquidacion.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(445, 377);
+            this.Controls.Add(this.cajaValorDeLiquidacion);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.botonCalcularLiquidacion);
             this.Controls.Add(this.cajaValorDelServicio);
             this.Controls.Add(this.cajaSalario);
@@ -176,6 +206,9 @@
         private System.Windows.Forms.TextBox cajaSalario;
         private System.Windows.Forms.TextBox cajaValorDelServicio;
         private System.Windows.Forms.Button botonCalcularLiquidacion;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox cajaValorDeLiquidacion;
     }
 }
 
